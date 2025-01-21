@@ -1,0 +1,88 @@
+id,name,locality,timezone,country_code,country_name,owner_id,owner_name,provider_id,provider_name,isMobile,isMonitor,instruments
+1575,Los Angeles - N. Mai,,America/Los_Angeles,US,United States,4,Unknown Governmental Organization,119,AirNow,False,True,Government Monitor
+7936,Los Angeles - N. Mai,Los Angeles-Long Beach-Santa Ana,America/Los_Angeles,US,United States,4,Unknown Governmental Organization,119,AirNow,False,True,Government Monitor
+290486,8544 - Roybal Lc,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290497,3548 - Elizabeth Learning Ctr,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290516,6685 - Sheridan St El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290556,3959 - 42Nd St El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290613,Sheridan St ES (6685),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290617,2383 - Esperanza El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290627,4096 - Gates El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290631,2603 - Buchanan El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+290669,6425 - Rowan El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+929705,Rowan ES (6425),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947154,54th St ES (3781),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947163,Trinity ES (7219),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947164,Berendo MS (8057),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947165,Atwater ES (2233),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947167,AGVX0MF3,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947168,Gates ES (4096),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947180,Roybal LC (8544),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947183,Budlong ES (2616),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947193,7370 - Utah El,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947197,Garfield HS/Monterey CHS (8677),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947201,San Pedro ES (6507),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947206,Logan ES (4904),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947208,Delevan Drive ES (3397),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947211,Normandie ES (5630),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947219,Russell ES (6438),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947221,Elizabeth Learning Ctr (3548),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947228,Lenicia Weemes ES (7151),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947229,Graham ES (4219),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947233,2068 - Allesandro Elementary,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947234,Virginia ES (7575),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947235,Solano ES (6836),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947238,Jefferson HS (8714),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947241,Metropolitan HS (8757),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947242,Marlton ES (1949),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947249,59th St ES (3795),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947250,Marvin ES (5178),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947252,Aragon ES (2178),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947254,Esperanza ES (2383),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947264,Buchanan ES (2603),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947266,Rosemont ES (6370),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947267,Maywood ES (2381),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947271,Harrison ES (4438),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947275,Sierra Park ES (6753),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947276,Diego Rivera LC (8867),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947277,Glenfeliz Blvd ES (4164),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947279,Annandale ES (2151),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947282,Chandler ES (2959),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947283,Van Ness ES (7425),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947285,Multnomah St ES (5425),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947289,State ES (6918),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947294,A6DR4SLX,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947296,Le Conte MS (8226),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947297,Mid-City Magnet ES (3500),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947306,Micheltorena ES (5288),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947307,Los Feliz ES (4986),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947309,Wilshire Crest ES (7795),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947310,Norwood ES (5699),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947315,Hancock Park ES (4397),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947317,Sheridan St ES (6685),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947318,Sierra Vista ES (6767),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947321,Wilton Pl ES (7808),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947322,Middleton ES (5301),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947323,42nd St ES (3959),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947327,El Sereno ES (3562),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947328,Hollywood HS (8693),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947334,Laurel ES (4808),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947335,Frank Del Olmo ES (2386),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947339,San Pascual ES (6493),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947341,"Knox ES, Dr Owen Lloyd (6869)",,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947346,San Antonio ES (4641),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947347,Arroyo Seco Museum Science Magnet SPAN (4322),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+947349,Eagle Rock ES (3507),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+1001754,A424LYXV,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+1037495,A6CW7BPK,,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Clarity Sensor
+1378636,Allesandro ES (2068),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Aerosol Black Carbon Detector (ABCD)
+1533720,Lorena St ES (4945),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Aerosol Black Carbon Detector (ABCD)
+1533911,Unnamed (DTNWP2832 → AKJWNNMC),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Aerosol Black Carbon Detector (ABCD)
+1533917,Estrella ES (2942),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Aerosol Black Carbon Detector (ABCD)
+1533920,Utah ES (7370),,America/Los_Angeles,US,United States,6,Unknown Community Organization,166,Clarity,False,False,Aerosol Black Carbon Detector (ABCD)
+1949204,Unnamed (DCBSH3824 → AX9T9WLM),,America/Los_Angeles,US,United States,9,Clarity,166,Clarity,False,False,Clarity Sensor
+1949205,Unnamed (DREKF2031 → A9J7X3VX),,America/Los_Angeles,US,United States,9,Clarity,166,Clarity,False,False,Clarity Sensor
+1949206,Unnamed (DFYXJ3461 → A64CNGJG),,America/Los_Angeles,US,United States,9,Clarity,166,Clarity,False,False,Clarity Sensor
+2069581,Unnamed (DHZCG3067 → AHYTLTN3),,America/Los_Angeles,US,United States,9,Clarity,166,Clarity,False,False,Clarity Sensor
+2905670,Story Park,,America/Los_Angeles,US,United States,12,AirGradient,66,AirGradient,False,False,AirGradient Sensor
+2945078,N. Main Street Collocation,,America/Los_Angeles,US,United States,9,Clarity,166,Clarity,False,False,Clarity Sensor
