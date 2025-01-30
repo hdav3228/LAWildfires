@@ -1,87 +1,80 @@
 import requests
-from urllib.parse import urlparse, parse_qs
 import csv
 
 # Configuration
-api_key = "bd2e74ce0b1f1334dbee28882d1fb4ff4b631655347f76ca590b93b9c86849e0" # change it to user's
-url = "https://api.openaq.org/v3/locations?coordinates=34.0549%2C-118.2426&radius=12000&limit=100&page=1&order_by=id&sort_order=asc" # get locations by LA coordinates 
-
+api_key = ""  # Replace with your API key
 headers = {"X-API-Key": api_key}
 
-parsed_url = urlparse(url)
-base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
-query_params = parse_qs(parsed_url.query)
-params = {k: v[0] for k, v in query_params.items()}
+# Read sensor IDs from CSV
+sensor_ids = []
+with open('openaq_data.csv', 'r', newline='', encoding='utf-8') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        sensor_ids.append(row['id'])
 
-all_results = []
-try:
-    # Initial request
-    response = requests.get(base_url, headers=headers, params=params)
-    response.raise_for_status()
-    data = response.json()
-    
-    # Get pagination information
-    total_found = data['meta']['found']
-    limit = int(params['limit'])
-    total_pages = (total_found + limit - 1) // limit  # Calculate total pages
-    
-    all_results.extend(data['results'])
-    
-    # Fetch remaining pages if needed
-    for page in range(2, total_pages + 1):
-        params['page'] = str(page)
-        response = requests.get(base_url, headers=headers, params=params)
-        response.raise_for_status()
-        page_data = response.json()
-        all_results.extend(page_data['results'])
+# API parameters
+base_params = {
+    'datetime_to': '2025-01-22T00:00:00Z',
+    'datetime_from': '2025-01-01T00:00:00Z',
+    'limit': 100,
+    'page': 1
+}
 
-except requests.exceptions.RequestException as e:
-    print(f"Error fetching data: {e}")
-    exit(1)
+# Prepare CSV
+measurements_file = 'measurements_data.csv'
+csv_columns_written = False
 
-# csv headers 
-csv_columns = [
-    'id', 'name', 'locality', 'timezone',
-    'country_code', 'country_name',
-    'owner_id', 'owner_name',
-    'provider_id', 'provider_name',
-    'isMobile', 'isMonitor', 'instruments'
-]
+with open(measurements_file, 'w', newline='', encoding='utf-8') as csvfile:
+    writer = None
 
-csv_rows = []
-for result in all_results:
-    # Handle nested objects and arrays
-    country = result.get('country', {})
-    owner = result.get('owner', {})
-    provider = result.get('provider', {})
-    
-    instruments = [
-        str(instrument.get('name', '')) 
-        for instrument in result.get('instruments', [])
-    ]
-    
-    csv_rows.append({
-        'id': result.get('id', ''),
-        'name': result.get('name', ''),
-        'locality': result.get('locality', ''),
-        'timezone': result.get('timezone', ''),
-        'country_code': country.get('code', ''),
-        'country_name': country.get('name', ''),
-        'owner_id': owner.get('id', ''),
-        'owner_name': owner.get('name', ''),
-        'provider_id': provider.get('id', ''),
-        'provider_name': provider.get('name', ''),
-        'isMobile': result.get('isMobile', ''),
-        'isMonitor': result.get('isMonitor', ''),
-        'instruments': '; '.join(instruments)
-    })
+    for sensor_id in sensor_ids:
+        print(f"Fetching data for sensor ID: {sensor_id}")
+        url = f"https://api.openaq.org/v3/sensors/{sensor_id}/measurements"
+        params = base_params.copy()
 
-# Write to CSV
-try:
-    with open('openaq_data.csv', 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-        writer.writeheader()
-        writer.writerows(csv_rows)
-    print("Data successfully exported to openaq_data.csv")
-except IOError as e:
-    print(f"Error writing to CSV: {e}")
+        try:
+            all_measurements = []
+            page = 1
+            while True:
+                params['page'] = page
+                response = requests.get(url, headers=headers, params=params)
+                response.raise_for_status()
+                data = response.json()
+                results = data.get('results', [])
+
+                if not results:
+                    break
+
+                all_measurements.extend(results)
+                page += 1
+
+            print(f"Retrieved {len(all_measurements)} measurements for sensor {sensor_id}")
+
+            # Process measurements
+            for measurement in all_measurements:
+                date_info = measurement.get('date', {})
+                row = {
+                    'sensor_id': sensor_id,
+                    'parameter': (measurement.get('parameter') or {}).get('name', ''),
+                    'value': measurement.get('value', ''),
+                    'unit': (measurement.get('parameter') or {}).get('units', ''),
+                    'date_utc': date_info.get('utc', ''),
+                    'date_local': date_info.get('local', ''),
+                    'location_id': measurement.get('locationId', ''),
+                    'coordinates_latitude': (measurement.get('coordinates') or {}).get('latitude', ''),
+                    'coordinates_longitude': (measurement.get('coordinates') or {}).get('longitude', '')
+                }
+
+                if not csv_columns_written:
+                    csv_columns = row.keys()
+                    writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+                    writer.writeheader()
+                    csv_columns_written = True
+
+                writer.writerow(row)
+
+        except requests.exceptions.RequestException as e:
+            print(f"Error for sensor {sensor_id}: {str(e)}")
+            continue
+
+print(f"Data saved to {measurements_file}")
